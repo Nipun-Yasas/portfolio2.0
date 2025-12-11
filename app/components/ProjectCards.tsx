@@ -1,0 +1,67 @@
+"use client";
+
+import React, { useState } from "react";
+import { cn } from "../../lib/utils";
+
+export const Card = React.memo(
+  ({
+    card,
+    index,
+    hovered,
+    setHovered,
+  }: {
+    card: any;
+    index: number;
+    hovered: number | null;
+    setHovered: React.Dispatch<React.SetStateAction<number | null>>;
+  }) => (
+    <div
+      onMouseEnter={() => setHovered(index)}
+      onMouseLeave={() => setHovered(null)}
+      className={cn(
+        "rounded-3xl relative overflow-hidden w-full transition-all duration-300 ease-out",
+        hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
+      )}
+    >
+      <div className="rounded-3xl overflow-hidden mb-4">
+        <img src={card.src} alt={card.projectName} className="w-full h-auto" />
+      </div>
+      <div className="flex justify-between items-end w-full px-2">
+        <div className="flex flex-col text-left">
+          <div className="text-xl md:text-2xl font-medium text-textPrimary">
+            {card.projectName}
+          </div>
+          <div className="text-sm  text-textPrimary  mt-1">{card.role}</div>
+        </div>
+        <div className="text-sm text-textPrimary">{card.year}</div>
+      </div>
+    </div>
+  )
+);
+
+Card.displayName = "Card";
+
+type Card = {
+  projectName: string;
+  role: string;
+  year: string;
+  src: string;
+};
+
+export function ProjectCards({ cards }: { cards: Card[] }) {
+  const [hovered, setHovered] = useState<number | null>(null);
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 pb-4 sm:pb-8 pt-8 md:pt-12 lg:pt-16 xl:pt-12 w-full">
+      {cards.map((card, index) => (
+        <Card
+          key={card.projectName}
+          card={card}
+          index={index}
+          hovered={hovered}
+          setHovered={setHovered}
+        />
+      ))}
+    </div>
+  );
+}
