@@ -29,6 +29,10 @@
   --btn-hover-text: #f7f6ff;
 
   --border-primary: #e7ebf3;
+
+  --globe-color:#ffffff;
+  --polygon-color:#000000;
+  --atmosphere-color:#000000;
 }
 
 .dark {
@@ -46,6 +50,10 @@
   --btn-hover-text: #0a0a0a;
 
   --border-primary: #141218;
+
+  --globe-color:#000000;
+  --polygon-color:#ffffff;
+  --atmosphere-color:#ffffff;
 }
 
 html {

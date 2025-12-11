@@ -82,7 +82,7 @@ export const Navigation = () => {
           >
             NY
           </a>
-          <ul className="hidden gap-6 text-sm sm:flex whitespace-nowrap px-16">
+          <ul className="hidden font-light gap-6 text-sm sm:flex whitespace-nowrap px-16">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               return (
