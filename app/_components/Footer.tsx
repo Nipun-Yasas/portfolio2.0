@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "../Button";
+import { Button } from "./Button";
 import Link from "next/link";
 import {
   IconBrandGithub,
@@ -8,7 +8,7 @@ import {
   IconBrandGmail,
 } from "@tabler/icons-react";
 import { motion } from "motion/react";
-import { SplitText } from "../SplitText";
+import { SplitText } from "./SplitText";
 
 export default function Footer() {
   return (

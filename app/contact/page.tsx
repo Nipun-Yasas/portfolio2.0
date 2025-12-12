@@ -18,21 +18,21 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { sampleArcs } from "@/lib/sampleArcs";
 import { useThemeColor } from "../hooks/useThemeColor";
-import { ScrollProgressBar } from "../components/ScrollProgressBar";
-import { Label } from "../components/inputs/label";
-import { Input } from "../components/inputs/input";
-import { TextArea } from "../components/inputs/textarea";
+import { ScrollProgressBar } from "../_components/ScrollProgressBar";
+import { Label } from "../_components/inputs/label";
+import { Input } from "../_components/inputs/input";
+import { TextArea } from "../_components/inputs/textarea";
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../components/Accordion";
+} from "../_components/Accordion";
 
-import { Navigation } from "../components/Navigation";
-import BlurText from "../components/BlurText";
-import { Button } from "../components/Button";
+import { Navigation } from "../_components/Navigation";
+import BlurText from "../_components/BlurText";
+import { Button } from "../_components/Button";
 
 const questions = [
   {
@@ -81,7 +81,7 @@ const questions = [
 ];
 
 const World = dynamic(
-  () => import("../components/Globe").then((m) => m.World),
+  () => import("../_components/Globe").then((m) => m.World),
   {
     ssr: false,
   }
