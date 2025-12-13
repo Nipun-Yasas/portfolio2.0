@@ -14,7 +14,7 @@ const awardsData = [
     award: "Semi-Finalists",
     competition: "Idealized",
     year: "2025",
-    type: "App Development and Datathon",
+    type: "App Development, Datathon",
   },
   {
     image: "/awards/CodeRally.jpg",
@@ -97,13 +97,18 @@ export default function Awards() {
           Awards
         </h1>
         <BlurText
-          text="Awards and Recognition"
+          text="Awards & Recognition"
           delay={150}
           animateBy="words"
           direction="top"
-          className="text-5xl py-2 font-bold font-mono"
+          className="text-4xl py-2 font-bold font-header"
         />
+        <h1 className="text-textPrimary font-light">
+          Achievements and recognitions from competitions, hackathons, and
+          events.
+        </h1>
       </div>
+
       <div className="lg:w-2/3 w-full justify-center flex flex-col gap-4">
         {awardsData.map((award, index) => (
           <AwardCard

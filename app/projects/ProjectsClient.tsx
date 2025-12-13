@@ -50,7 +50,7 @@ export default function ProjectsPage() {
             direction="top"
             className="text-5xl py-2 font-bold font-mono"
           />
-          <div className="flex flex-wrap justify-end gap-2 m-8">
+          <div className="flex flex-wrap justify-center md:justify-end gap-2 m-8">
             {categories.map((category) => (
               <button
                 key={category}

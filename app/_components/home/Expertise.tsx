@@ -85,8 +85,11 @@ export default function Expertise() {
         delay={150}
         animateBy="words"
         direction="top"
-        className="text-4xl py-2 mb-8 font-bold"
+        className="text-4xl py-2 font-bold font-header"
       />
+      <h1 className="text-textPrimary font-light mb-8">
+        The core technical domains I focus on and continuously improve.
+      </h1>
       <div className="flex flex-col md:flex-row gap-8 items-start w-full max-w-7xl mx-auto">
         <div className="w-full md:w-1/2">
           <Accordion

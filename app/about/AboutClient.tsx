@@ -18,7 +18,7 @@ import DomeGallery from "../_components/about/DomeGallery";
 export default function About() {
   return (
     <div>
-      <div className="pb-12 pt-28 sm:pt-20 md:pt-40 lg:pt-32 px-4 sm:px-6 md:px-12 lg:px-12 w-full max-w-7xl mx-auto">
+      <div className="pb-12 pt-36 sm:pt-20 md:pt-40 lg:pt-32 px-4 sm:px-6 md:px-12 lg:px-12 w-full max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row gap-8 sm:gap-10 lg:gap-16 items-center sm:items-start w-full">
           <div className="flex-shrink-0 w-full sm:w-auto flex justify-center sm:block">
             <ProfileCard
@@ -96,7 +96,7 @@ export default function About() {
       </div>
       <div className="pt-8 sm:pt-12 md:pt-16 lg:pt-20 px-4 sm:px-6 md:px-12 lg:px-12 relative h-[800px] overflow-hidden flex flex-col">
         <div className="items-start w-full max-w-7xl mx-auto gap-2 mb-0 justify-start z-10">
-          <h1 className="font-header text-primary flex items-center py-2 sm:py-0">
+          <h1 className="font-header text-primary flex items-center py-2 sm:py-0 gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -119,9 +119,14 @@ export default function About() {
             delay={150}
             animateBy="words"
             direction="top"
-            className="text-5xl py-2 font-bold font-mono"
+            className="text-4xl py-2 font-bold font-header"
           />
+          <h1 className="text-textPrimary font-light">
+            Highlights and memorable moments from my university life and
+            activities.
+          </h1>
         </div>
+
         <div className="flex-1 w-full pt-8 sm:pt-12 md:pt-16 lg:pt-20 relative min-h-0">
           <DomeGallery />
         </div>

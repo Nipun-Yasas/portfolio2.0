@@ -33,11 +33,11 @@ export default function Experience() {
           Experience
         </h1>
         <BlurText
-          text="Working Experience"
+          text="Professional Experience"
           delay={150}
           animateBy="words"
           direction="top"
-          className="text-5xl py-2 font-bold font-mono"
+          className="text-4xl py-2 font-bold font-header"
         />
       </div>
       <div className="lg:w-2/3 w-full justify-center flex flex-col gap-4">

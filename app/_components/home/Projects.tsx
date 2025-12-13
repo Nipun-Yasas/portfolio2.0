@@ -30,14 +30,14 @@ export default function Projects() {
         Projects
       </h1>
       <BlurText
-        text="Selected Projects"
+        text="Selected Work"
         delay={150}
         animateBy="words"
         direction="top"
-        className="text-5xl py-2 font-bold font-mono"
+        className="text-4xl py-2 font-bold font-header"
       />
-      <h1 className="text-textPrimary">
-        Here are some of the projects showcasing my skills
+      <h1 className="text-textPrimary font-light">
+        A curated collection of projects showcasing my skills and problem-solving approach.
       </h1>
       <ProjectCards cards={cards} />
       <motion.div

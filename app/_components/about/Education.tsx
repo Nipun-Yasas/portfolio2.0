@@ -123,13 +123,16 @@ export default function Education() {
           Education
         </h1>
         <BlurText
-          text="Qualification"
+          text="Academic Background"
           delay={150}
           animateBy="words"
           direction="top"
-          className="text-5xl py-2 font-bold font-mono"
+          className="text-4xl py-2 font-bold font-header"
         />
       </div>
+      <h1 className="text-textPrimary font-light mb-4">
+        My educational journey and foundation in Information Technology.
+      </h1>
 
       <div className="mx-auto max-w-8xl px-4 pt-8 sm:px-6 lg:px-8">
         <Timeline data={data} />

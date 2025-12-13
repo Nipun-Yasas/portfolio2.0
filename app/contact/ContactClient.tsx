@@ -202,7 +202,7 @@ export default function Contact() {
             delay={150}
             animateBy="words"
             direction="top"
-            className="text-5xl py-2 font-bold font-mono"
+            className="text-4xl py-2 font-bold font-header"
           />
         </div>
         <div className="flex flex-col md:flex-row w-full justify-between gap-4 relative overflow-hidden">
@@ -297,10 +297,10 @@ export default function Contact() {
               delay={150}
               animateBy="words"
               direction="top"
-              className="text-5xl py-2 font-bold font-mono"
+              className="text-4xl py-2 font-bold font-header"
             />
           </div>
-          <div className="min-[860px]:w-2/3 w-full mt-8">
+          <div className="min-[860px]:w-2/3 w-full mt-4">
             <Accordion className="w-full" collapsible type="single">
               {questions.map((item) => (
                 <AccordionItem
@@ -321,41 +321,6 @@ export default function Contact() {
                 </AccordionItem>
               ))}
             </Accordion>
-          </div>
-        </div>
-        <div className="flex flex-col-reverse sm:flex-row justify-between items-center gap-4 text-sm text-textPrimary pb-16 sm:pb-0">
-          <div className="flex items-center gap-1">
-            <span>&copy; {new Date().getFullYear()} Nipun Yasas</span>
-          </div>
-
-          <div className="hidden sm:flex items-center gap-4 group/footer-socials">
-            <Link
-              href="https://www.linkedin.com/in/nipun-yasas-1126a8275"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-opacity duration-300 group-hover/footer-socials:opacity-30 hover:!opacity-100"
-              aria-label="LinkedIn"
-            >
-              <IconBrandLinkedin className="w-6 h-6 text-textPrimary" />
-            </Link>
-            <Link
-              href="https://github.com/Nipun-Yasas"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-opacity duration-300 group-hover/footer-socials:opacity-30 hover:!opacity-100"
-              aria-label="GitHub"
-            >
-              <IconBrandGithub className="w-6 h-6 text-textPrimary" />
-            </Link>
-            <Link
-              href="mailto:nipuny74@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-opacity duration-300 group-hover/footer-socials:opacity-30 hover:!opacity-100"
-              aria-label="Gmail"
-            >
-              <IconBrandGmail className="w-6 h-6 text-textPrimary" />
-            </Link>
           </div>
         </div>
       </div>

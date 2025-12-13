@@ -24,8 +24,13 @@ const config = {
           950: "#0E0024",
         },
         background: "var(--background)",
+        backgroundSecondary: "var(--background-secondary)",
         foreground: "var(--foreground)",
         primary: "var(--text-primary)",
+        textPrimary: "var(--text-primary)",
+        textLoop: "var(--text-loop)",
+        hoverPrimary: "var(--hover-primary)",
+        borderPrimary: "var(--border-primary)",
         border: "var(--border)",
       },
       keyframes: {
