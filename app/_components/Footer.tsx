@@ -3,11 +3,7 @@
 import { Button } from "./Button";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import {
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconBrandGmail,
-} from "@tabler/icons-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "motion/react";
 import { SplitText } from "./SplitText";
 
@@ -55,7 +51,7 @@ export default function Footer() {
               className="transition-opacity duration-300 group-hover/footer-socials-mobile:opacity-30 hover:!opacity-100"
               aria-label="LinkedIn"
             >
-              <IconBrandLinkedin className="w-6 h-6 text-textPrimary" />
+              <Linkedin className="w-6 h-6 text-textPrimary" />
             </Link>
             <Link
               href="https://github.com/Nipun-Yasas"
@@ -64,7 +60,7 @@ export default function Footer() {
               className="transition-opacity duration-300 group-hover/footer-socials-mobile:opacity-30 hover:!opacity-100"
               aria-label="GitHub"
             >
-              <IconBrandGithub className="w-6 h-6 text-textPrimary" />
+              <Github className="w-6 h-6 text-textPrimary" />
             </Link>
             <Link
               href="mailto:nipuny74@gmail.com"
@@ -73,7 +69,7 @@ export default function Footer() {
               className="transition-opacity duration-300 group-hover/footer-socials:opacity-30 hover:!opacity-100"
               aria-label="Gmail"
             >
-              <IconBrandGmail className="w-6 h-6 text-textPrimary" />
+              <Mail className="w-6 h-6 text-textPrimary" />
             </Link>
           </div>
         </motion.div>
@@ -91,7 +87,7 @@ export default function Footer() {
             className="transition-opacity duration-300 group-hover/footer-socials:opacity-30 hover:!opacity-100"
             aria-label="LinkedIn"
           >
-            <IconBrandLinkedin className="w-6 h-6 text-textPrimary" />
+            <Linkedin className="w-6 h-6 text-textPrimary" />
           </Link>
           <Link
             href="https://github.com/Nipun-Yasas"
@@ -100,7 +96,7 @@ export default function Footer() {
             className="transition-opacity duration-300 group-hover/footer-socials:opacity-30 hover:!opacity-100"
             aria-label="GitHub"
           >
-            <IconBrandGithub className="w-6 h-6 text-textPrimary" />
+            <Github className="w-6 h-6 text-textPrimary" />
           </Link>
           <Link
             href="mailto:nipuny74@gmail.com"
@@ -109,7 +105,7 @@ export default function Footer() {
             className="transition-opacity duration-300 group-hover/footer-socials:opacity-30 hover:!opacity-100"
             aria-label="Gmail"
           >
-            <IconBrandGmail className="w-6 h-6 text-textPrimary" />
+            <Mail className="w-6 h-6 text-textPrimary" />
           </Link>
         </div>
       </div>
