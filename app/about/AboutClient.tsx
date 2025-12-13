@@ -2,8 +2,6 @@
 
 import { motion } from "framer-motion";
 
-import { ScrollProgressBar } from "../_components/ScrollProgressBar";
-import { Navigation } from "../_components/Navigation";
 import ProfileCard from "../_components/about/ProfileCard";
 import { HeroHighlight, Highlight } from "../_components/HeroHighlight";
 import { Button } from "../_components/Button";
@@ -13,15 +11,13 @@ import Education from "../_components/about/Education";
 import Stats from "../_components/about/Stats";
 import Experience from "../_components/about/Experience";
 import Awards from "../_components/about/Awards";
-import Footer from "../_components/Footer";
+
 import BlurText from "../_components/BlurText";
 import DomeGallery from "../_components/about/DomeGallery";
 
 export default function About() {
   return (
     <div>
-      <ScrollProgressBar />
-      <Navigation />
       <div className="pb-12 pt-28 sm:pt-20 md:pt-40 lg:pt-32 px-4 sm:px-6 md:px-12 lg:px-12 w-full max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row gap-8 sm:gap-10 lg:gap-16 items-center sm:items-start w-full">
           <div className="flex-shrink-0 w-full sm:w-auto flex justify-center sm:block">
@@ -67,7 +63,9 @@ export default function About() {
             <div className="hidden lg:block w-full">
               <Stats />
             </div>
-            <Button>Download CV</Button>
+            <a href="/Nipun_Bandara_CV.pdf" download="Nipun_Bandara_CV.pdf">
+              <Button>Download CV</Button>
+            </a>
           </div>
         </div>
         <div className="block lg:hidden w-full mt-10">
@@ -128,7 +126,6 @@ export default function About() {
           <DomeGallery />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

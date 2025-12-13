@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter, DM_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "./_components/ThemeProvider";
+import ClientLoader from "./_components/ClientLoader";
+import { Navigation } from "./_components/Navigation";
+import Footer from "./_components/Footer";
+import { ScrollProgressBar } from "./_components/ScrollProgressBar";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -83,7 +87,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <ClientLoader>
+            <ScrollProgressBar />
+            <Navigation />
+            {children}
+            <Footer />
+          </ClientLoader>
         </ThemeProvider>
       </body>
     </html>

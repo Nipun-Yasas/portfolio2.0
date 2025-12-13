@@ -41,14 +41,14 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           type={type}
           className={cn(
             `shadow-input text-textPrimary bg-backgroundSecondary border-none flex h-10 w-full rounded-md px-3 py-2 text-sm transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 disabled:cursor-not-allowed disabled:opacity-50 `,
-            className,
+            className
           )}
           ref={ref}
           {...props}
         />
       </motion.div>
     );
-  },
+  }
 );
 Input.displayName = "Input";
 

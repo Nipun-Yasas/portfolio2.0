@@ -18,7 +18,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { sampleArcs } from "@/lib/sampleArcs";
 import { useThemeColor } from "../hooks/useThemeColor";
-import { ScrollProgressBar } from "../_components/ScrollProgressBar";
+
 import { Label } from "../_components/inputs/label";
 import { Input } from "../_components/inputs/input";
 import { TextArea } from "../_components/inputs/textarea";
@@ -30,7 +30,6 @@ import {
   AccordionTrigger,
 } from "../_components/Accordion";
 
-import { Navigation } from "../_components/Navigation";
 import BlurText from "../_components/BlurText";
 import { Button } from "../_components/Button";
 
@@ -178,8 +177,6 @@ export default function Contact() {
 
   return (
     <div>
-      <ScrollProgressBar />
-      <Navigation />
       <div className="pb-4 pt-32 sm:pt-32 px-4 sm:px-6 md:px-12 lg:px-12 w-full max-w-7xl mx-auto">
         <div className="items-center gap-2 mb-4 justify-start">
           <h1 className="font-header text-primary flex items-center gap-2">

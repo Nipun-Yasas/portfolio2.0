@@ -9,7 +9,7 @@ export default function ToolTip({ trigger, content }: ToolTipProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative inline-block group z-50">
+    <div className="relative inline-block group">
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
@@ -37,13 +37,14 @@ export default function ToolTip({ trigger, content }: ToolTipProps) {
       </button>
 
       <div
-        className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-72 transition-all duration-300 ease-out z-[60] ${isOpen
+        className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-72 transition-all duration-300 ease-out z-[60] ${
+          isOpen
             ? "visible opacity-100 translate-y-0"
             : "invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0"
-          }`}
+        }`}
       >
         <div className="relative p-4 bg-backgroundSecondary backdrop-blur-md rounded-2xl border border-white/10 shadow-[0_0_30px_rgba(79,70,229,0.15)]">
-          <div className="flex items-center gap-3 mb-2">
+          <div className="flex items-center justify-center gap-3 mb-2">
             <div className="flex items-center justify-center w-8 h-8 rounded-full bg-indigo-500/20">
               <svg
                 viewBox="0 0 20 20"

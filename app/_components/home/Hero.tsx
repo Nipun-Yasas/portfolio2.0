@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 
 import BackgroundBeamsWithCollision from "../BackgroundBeamsWithCollision";
-import { Navigation } from "../Navigation";
+
 import { SplitText } from "../SplitText";
 import { HeroHighlight, Highlight } from "../HeroHighlight";
 import { Button } from "../Button";
@@ -20,7 +20,6 @@ export default function Hero() {
   return (
     <div className="min-h-screen">
       <BackgroundBeamsWithCollision className="overflow-hidden w-screen flex flex-col items-center justify-center">
-        <Navigation />
         <div className="pb-12 pt-24 sm:pt-24 lg:pt-24 px-4 sm:px-6 md:px-12 lg:px-12 w-full max-w-7xl mx-auto">
           <div className="flex items-center gap-2 mb-4 justify-start">
             <motion.span

@@ -33,10 +33,43 @@ const config = {
           "0%": { transform: "translateY(-10px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
+        pathTriangle: {
+          "33%": { strokeDashoffset: "74" },
+          "66%": { strokeDashoffset: "147" },
+          "100%": { strokeDashoffset: "221" },
+        },
+        dotTriangle: {
+          "33%": { transform: "translate(0, 0)" },
+          "66%": { transform: "translate(10px, -18px)" },
+          "100%": { transform: "translate(-10px, -18px)" },
+        },
+        pathRect: {
+          "25%": { strokeDashoffset: "64" },
+          "50%": { strokeDashoffset: "128" },
+          "75%": { strokeDashoffset: "192" },
+          "100%": { strokeDashoffset: "256" },
+        },
+        dotRect: {
+          "25%": { transform: "translate(0, 0)" },
+          "50%": { transform: "translate(18px, -18px)" },
+          "75%": { transform: "translate(0, -36px)" },
+          "100%": { transform: "translate(-18px, -18px)" },
+        },
+        pathCircle: {
+          "25%": { strokeDashoffset: "125" },
+          "50%": { strokeDashoffset: "175" },
+          "75%": { strokeDashoffset: "225" },
+          "100%": { strokeDashoffset: "275" },
+        },
       },
       animation: {
         "slide-in-top":
           "slide-in-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both",
+        "dot-rect": "dotRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite",
+        "path-rect": "pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite",
+        "path-triangle": "pathTriangle 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite",
+        "dot-triangle": "dotTriangle 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite",
+        "path-circle": "pathCircle 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite",
       },
     },
   },

@@ -4,8 +4,7 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { projects } from "../../../lib/projectData";
-import { Navigation } from "../../_components/Navigation";
-import Footer from "../../_components/Footer";
+
 import { Button } from "../../_components/Button";
 import { ArrowLeft, ArrowRight, Github, ExternalLink } from "lucide-react";
 
@@ -30,7 +29,6 @@ export default function ProjectDetail() {
 
   return (
     <div>
-      <Navigation />
       <div className="pt-24 smLpt-20 md:pt-24 lg:pt-28 px-4 sm:px-6 md:px-12 lg:px-12 w-full max-w-7xl mx-auto min-h-screen flex flex-col">
         <div className="flex flex-col gap-8 flex-1">
           <Link
@@ -103,7 +101,6 @@ export default function ProjectDetail() {
               )}
             </div>
           </div>
-          
 
           <div className="flex flex-col md:flex-row gap-8 md:gap-12">
             <div className="order-2 md:w-1/4 space-y-4">
@@ -216,7 +213,6 @@ export default function ProjectDetail() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

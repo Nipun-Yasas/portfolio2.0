@@ -32,14 +32,20 @@ export const Card = React.memo(
     >
       <Link href={`/projects/${card.slug}`} className="block h-full w-full">
         <div className="rounded-3xl overflow-hidden mb-4">
-          <img src={card.src} alt={card.projectName} className="w-full h-auto" />
+          <img
+            src={card.src}
+            alt={card.projectName}
+            className="w-full h-auto"
+          />
         </div>
         <div className="flex justify-between items-end w-full px-2">
           <div className="flex flex-col text-left">
             <div className="text-xl md:text-2xl font-semibold text-textPrimary">
               {card.projectName}
             </div>
-            <div className="text-sm  text-textPrimary font-light mt-1">{card.role}</div>
+            <div className="text-sm  text-textPrimary font-light mt-1">
+              {card.role}
+            </div>
           </div>
           <div className="text-sm text-textPrimary font-light">{card.year}</div>
         </div>

@@ -209,7 +209,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
       animationHandlers.updateCardTransform(
         card.clientHeight / 2 + gamma * mobileTiltSensitivity,
         card.clientWidth / 2 +
-        (beta - ANIMATION_CONFIG.DEVICE_BETA_OFFSET) * mobileTiltSensitivity,
+          (beta - ANIMATION_CONFIG.DEVICE_BETA_OFFSET) * mobileTiltSensitivity,
         card,
         wrap
       );
@@ -289,14 +289,14 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
 
   const cardStyle = useMemo(
     () =>
-    ({
-      "--icon": iconUrl ? `url(${iconUrl})` : "none",
-      "--grain": grainUrl ? `url(${grainUrl})` : "none",
-      "--behind-gradient": showBehindGradient
-        ? behindGradient ?? DEFAULT_BEHIND_GRADIENT
-        : "none",
-      "--inner-gradient": innerGradient ?? DEFAULT_INNER_GRADIENT,
-    } as React.CSSProperties),
+      ({
+        "--icon": iconUrl ? `url(${iconUrl})` : "none",
+        "--grain": grainUrl ? `url(${grainUrl})` : "none",
+        "--behind-gradient": showBehindGradient
+          ? behindGradient ?? DEFAULT_BEHIND_GRADIENT
+          : "none",
+        "--inner-gradient": innerGradient ?? DEFAULT_INNER_GRADIENT,
+      } as React.CSSProperties),
     [iconUrl, grainUrl, showBehindGradient, behindGradient, innerGradient]
   );
 

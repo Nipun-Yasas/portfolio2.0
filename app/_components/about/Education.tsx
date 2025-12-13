@@ -123,7 +123,7 @@ export default function Education() {
           Education
         </h1>
         <BlurText
-          text="Qualifications"
+          text="Qualification"
           delay={150}
           animateBy="words"
           direction="top"

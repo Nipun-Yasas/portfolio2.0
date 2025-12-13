@@ -106,7 +106,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
           ease: "none",
           opacity: 1,
           filter: "blur(0px)",
-          stagger: 0.2, // Stagger relative to total duration
+          stagger: 0.2,
         }
       );
     },

@@ -74,7 +74,7 @@ export const Navigation = () => {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          className="max-screen bg-solid sm:backdrop-blur-md bg-backgroundSecondary pointer-events-auto flex w-full items-center justify-between gap-6 rounded-full px-4 py-1 transition-colors sm:px-6 sm:pr-4"
+          className="max-screen bg-solid sm:backdrop-blur-md  pointer-events-auto flex w-full items-center justify-between gap-6 rounded-full px-4 py-1 transition-colors sm:px-6 sm:pr-4"
         >
           <a
             className="font-clash-display text-xl text-textPrimary font-medium sm:text-xl"
@@ -152,7 +152,7 @@ export const Navigation = () => {
                   );
                 });
               }}
-              className="inline-flex cursor-pointer items-center justify-center whitespace-nowrap text-sm font-semibold disabled:pointer-events-none disabled:opacity-50 hover:bg-hoverPrimary h-11 w-11 relative rounded-full shadow backdrop-blur-md transition-all active:scale-90 sm:h-10 sm:w-10 sm:border-none sm:bg-transparent sm:shadow-none sm:backdrop-blur-none"
+              className="inline-flex cursor-pointer items-center justify-center whitespace-nowrap text-sm font-semibold disabled:pointer-events-none disabled:opacity-50 hover:bg-hoverPrimary h-11 w-11 relative rounded-full transition-all active:scale-90 sm:h-10 sm:w-10 sm:border-none sm:bg-transparent sm:shadow-none sm:backdrop-blur-none bg-transparent shadow-none backdrop-blur-none"
             >
               <div
                 className="absolute inset-0 flex items-center justify-center transition-all duration-300"

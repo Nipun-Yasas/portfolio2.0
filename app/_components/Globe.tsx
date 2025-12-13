@@ -11,7 +11,7 @@ import countries from "../../lib/globe.json";
 declare module "@react-three/fiber" {
   interface ThreeElements {
     threeGlobe: ThreeElements["mesh"] & {
-      new(): ThreeGlobe;
+      new (): ThreeGlobe;
     };
   }
 }
@@ -126,19 +126,25 @@ export function Globe({ globeConfig, data }: WorldProps) {
       (v, i, a) =>
         a.findIndex((v2) =>
           ["lat", "lng"].every(
-            (k) => v2[k as "lat" | "lng"] === v[k as "lat" | "lng"],
-          ),
-        ) === i,
+            (k) => v2[k as "lat" | "lng"] === v[k as "lat" | "lng"]
+          )
+        ) === i
     );
 
     globeRef.current
       .hexPolygonsData(countries.features)
       .hexPolygonResolution(globeConfig.hexPolygonResolution || 3)
       .hexPolygonMargin(0.7)
-      .showAtmosphere(globeConfig.showAtmosphere !== undefined ? globeConfig.showAtmosphere : true)
+      .showAtmosphere(
+        globeConfig.showAtmosphere !== undefined
+          ? globeConfig.showAtmosphere
+          : true
+      )
       .atmosphereColor(globeConfig.atmosphereColor || "#ffffff")
       .atmosphereAltitude(globeConfig.atmosphereAltitude || 0.1)
-      .hexPolygonColor(() => globeConfig.polygonColor || "rgba(255,255,255,0.7)");
+      .hexPolygonColor(
+        () => globeConfig.polygonColor || "rgba(255,255,255,0.7)"
+      );
 
     globeRef.current
       .arcsData(data)
@@ -167,7 +173,8 @@ export function Globe({ globeConfig, data }: WorldProps) {
       .ringMaxRadius(globeConfig.maxRings || 3)
       .ringPropagationSpeed(RING_PROPAGATION_SPEED)
       .ringRepeatPeriod(
-        ((globeConfig.arcTime || 2000) * (globeConfig.arcLength || 0.9)) / (globeConfig.rings || 1),
+        ((globeConfig.arcTime || 2000) * (globeConfig.arcLength || 0.9)) /
+          (globeConfig.rings || 1)
       );
   }, [
     isInitialized,
@@ -193,7 +200,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
       const newNumbersOfRings = genRandomNumbers(
         0,
         data.length,
-        Math.floor((data.length * 4) / 5),
+        Math.floor((data.length * 4) / 5)
       );
 
       const ringsData = data
@@ -271,10 +278,10 @@ export function hexToRgb(hex: string) {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   return result
     ? {
-      r: parseInt(result[1], 16),
-      g: parseInt(result[2], 16),
-      b: parseInt(result[3], 16),
-    }
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16),
+      }
     : null;
 }
 
