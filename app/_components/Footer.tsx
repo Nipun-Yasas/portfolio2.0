@@ -2,6 +2,7 @@
 
 import { Button } from "./Button";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import {
   IconBrandGithub,
   IconBrandLinkedin,
@@ -11,6 +12,7 @@ import { motion } from "motion/react";
 import { SplitText } from "./SplitText";
 
 export default function Footer() {
+  const router = useRouter();
   return (
     <footer className="pb-20 md:pb-4 pt-8 md:pt-12 lg:pt-16 xl:pt-12 px-4 sm:px-6 md:px-12 lg:px-12 w-full max-w-7xl mx-auto">
       <div className="bg-backgroundSecondary rounded-xl flex flex-col gap-8 w-full justify-center items-center">
@@ -43,7 +45,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="flex flex-col items-center gap-6 sm:pt-8 pb-8"
         >
-          <Button>Contact Me</Button>
+          <Button onClick={() => router.push("/contact")}>Contact Me</Button>
 
           <div className="flex sm:hidden items-center gap-6 group/footer-socials-mobile">
             <Link

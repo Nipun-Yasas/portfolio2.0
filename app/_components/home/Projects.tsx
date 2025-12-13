@@ -5,33 +5,10 @@ import { Button } from "../Button";
 import { ProjectCards } from "../ProjectCards";
 import { motion } from "motion/react";
 
+import { projects } from "../../../lib/projectData";
+
 export default function Projects() {
-  const cards = [
-    {
-      projectName: "SkillForge",
-      role: "Full Stack Developer",
-      year: "2024 - 2025",
-      src: "/projects/SkillForge.png",
-    },
-    {
-      projectName: "Employee Management System",
-      role: "Full Stack Developer",
-      year: "2025",
-      src: "/projects/Shiftly.png",
-    },
-    {
-      projectName: "Auto Care Pro",
-      role: "Full Stack Developer",
-      year: "2024",
-      src: "/projects/AutoCarePro.png",
-    },
-    {
-      projectName: "APOD ",
-      role: "Frontend Developer",
-      year: "2024",
-      src: "/projects/Apod.png",
-    },
-  ];
+  const cards = projects.slice(0, 6);
   return (
     <div className="justify-center pt-8 md:pt-12 lg:pt-16 xl:pt-12 px-4 sm:px-6 md:px-12 w-full max-w-7xl mx-auto">
       <h1 className="font-header text-primary flex items-center gap-2">
