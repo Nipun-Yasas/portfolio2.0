@@ -1,6 +1,7 @@
 "use client";
 
 import BlurText from "../BlurText";
+import Image from "next/image";
 import { Smartphone, Brain, Cloud, Code, PenTool } from "lucide-react";
 import { useState } from "react";
 import {
@@ -129,11 +130,12 @@ export default function Expertise() {
         <div className="w-full md:w-1/2 flex items-center justify-center">
           <div className="relative w-full aspect-square md:aspect-video rounded-xl overflow-hidden ">
             {activeImage && (
-              <img
+              <Image
                 key={activeImage}
                 src={activeImage}
                 alt="Expertise"
-                className="w-full h-full object-cover transition-opacity duration-500 ease-in-out opacity-100 animate-in fade-in zoom-in-95"
+                fill
+                className="object-cover transition-opacity duration-500 ease-in-out opacity-100 animate-in fade-in zoom-in-95"
               />
             )}
           </div>

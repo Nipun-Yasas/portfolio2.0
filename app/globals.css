@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-backgroundSecondary: var(--background-secondary);
@@ -39,7 +40,7 @@
   --background: #0b0b0d;
   --foreground: #f5f5fa;
 
-  --background-secondary: rgba(20, 20, 30, 0.9);
+  --background-secondary: rgba(0, 0, 0, 1);
 
   --text-primary: #f7f6ff;
   --text-loop: #2d2a35;

@@ -206,7 +206,7 @@ export default function Contact() {
           />
         </div>
         <div className="flex flex-col md:flex-row w-full justify-between gap-4 relative overflow-hidden">
-          <div className="w-full justify-center md:w-2/5 lg:w-1/2">
+          <div className="w-full justify-between md:w-2/5 lg:w-1/2">
             <form className="my-8" onSubmit={formik.handleSubmit}>
               <div className="mb-4 flex flex-col space-y-8 md:space-y-4 md:space-x-2">
                 <div className="flex w-full flex-col space-y-4">
@@ -268,7 +268,7 @@ export default function Contact() {
               </div>
             </form>
           </div>
-          <div className="w-full h-[350px] md:h-auto md:w-3/5 lg:w-1/2">
+          <div className="w-full h-[40vh] min-[400px]:h-[50vh] min-[500px]:h-[60vh] min-[600px]:h-[70vh] md:h-[60vh] lg:h-[70vh] md:w-3/5 lg:w-1/2">
             <World data={sampleArcs} globeConfig={globeConfig} />
           </div>
         </div>

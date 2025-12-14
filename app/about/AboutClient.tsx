@@ -11,7 +11,7 @@ import Education from "../_components/about/Education";
 import Stats from "../_components/about/Stats";
 import Experience from "../_components/about/Experience";
 import Awards from "../_components/about/Awards";
-
+import TechnicalSkills from "../_components/about/TechnicalSkills";
 import BlurText from "../_components/BlurText";
 import DomeGallery from "../_components/about/DomeGallery";
 
@@ -88,14 +88,17 @@ export default function About() {
       <div className="pt-8 sm:pt-12 md:pt-16 lg:pt-20 px-4 sm:px-6 md:px-12 lg:px-12 w-full max-w-7xl mx-auto">
         <Education />
       </div>
+      <div className="pt-8 sm:pt-12 md:pt-16 lg:pt-20 px-4 sm:px-6 md:px-12 lg:px-12 w-full max-w-7xl mx-auto">
+        <TechnicalSkills />
+      </div>
       <div className="pt-16 sm:pt-12 md:pt-16 lg:pt-20 px-4 sm:px-6 md:px-12 lg:px-12 w-full max-w-7xl mx-auto">
         <Experience />
       </div>
       <div className="pt-8 sm:pt-12 md:pt-16 lg:pt-20 px-4 sm:px-6 md:px-12 lg:px-12 w-full max-w-7xl mx-auto">
         <Awards />
       </div>
-      <div className="pt-8 sm:pt-12 md:pt-16 lg:pt-20 px-4 sm:px-6 md:px-12 lg:px-12 relative h-[800px] overflow-hidden flex flex-col">
-        <div className="items-start w-full max-w-7xl mx-auto gap-2 mb-0 justify-start z-10">
+      <div className="p-8 sm:p-12 md:p-16 lg:p-20 px-4 sm:px-6 md:px-12 lg:px-12 w-full max-w-7xl mx-auto">
+        <div className="items-start gap-2  justify-start z-10">
           <h1 className="font-header text-primary flex items-center py-2 sm:py-0 gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -126,10 +129,9 @@ export default function About() {
             activities.
           </h1>
         </div>
-
-        <div className="flex-1 w-full pt-8 sm:pt-12 md:pt-16 lg:pt-20 relative min-h-0">
-          <DomeGallery />
-        </div>
+      </div>
+      <div className="w-full relative h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden flex flex-col">
+        <DomeGallery />
       </div>
     </div>
   );

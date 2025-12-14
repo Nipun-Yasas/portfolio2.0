@@ -23,10 +23,9 @@ export const HeroHighlight = ({
   }
   return (
     <div>
-      <div className="pointer-events-none absolute inset-0 dark:hidden" />
-      <div className="pointer-events-none absolute inset-0 hidden dark:block" />
+      <div className="pointer-events-none absolute inset-0" />
       <motion.div
-        className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100 dark:hidden"
+        className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
           WebkitMaskImage: useMotionTemplate`
             radial-gradient(
@@ -45,7 +44,7 @@ export const HeroHighlight = ({
         }}
       />
       <motion.div
-        className="pointer-events-none absolute inset-0 hidden opacity-0 transition duration-300 group-hover:opacity-100 dark:block"
+        className="pointer-events-none absolute inset-0 hidden opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
           WebkitMaskImage: useMotionTemplate`
             radial-gradient(
@@ -94,7 +93,7 @@ export const Highlight = ({
         backgroundPosition: "left center",
         display: "inline",
       }}
-      className={`relative inline-block rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300 px-1 pb-1 dark:from-indigo-500 dark:to-purple-500 ${className}`}
+      className={`relative inline-block rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 px-1 pb-1 ${className}`}
     >
       {children}
     </motion.span>

@@ -51,7 +51,7 @@ export const Navigation = () => {
           duration: 0.5,
           ease: "easeInOut",
         }}
-        className="pointer-events-none fixed justify-center top-0 left-0 right-0 h-24 bg-gradient-to-b from-[var(--background)] to-transparent z-40"
+        className="pointer-events-none fixed justify-center top-0 left-0 right-0 h-6 bg-gradient-to-b from-[var(--background)] to-transparent z-40"
       />
       <header className="pointer-events-none fixed top-0 left-0 right-0 z-50 w-full px-0 py-4 flex justify-center">
         <motion.nav
@@ -64,18 +64,19 @@ export const Navigation = () => {
             isMobile
               ? { backgroundColor: "rgba(0, 0, 0, 0)", width: "95%" }
               : {
-                  width: isScrolled ? "fit-content" : "800px",
-                  backgroundColor: isScrolled
-                    ? "var(--background-secondary)"
-                    : "rgba(0, 0, 0, 0)",
-                }
+                width: isScrolled ? "fit-content" : "800px",
+                backgroundColor: isScrolled
+                  ? "var(--background-secondary)"
+                  : "rgba(0, 0, 0, 0)",
+              }
           }
           transition={{
             duration: 0.5,
             ease: "easeInOut",
           }}
-          className="max-screen bg-solid sm:backdrop-blur-md  pointer-events-auto flex w-full items-center justify-between gap-6 rounded-full px-4 py-1 transition-colors sm:px-6 sm:pr-4"
+          className="relative max-screen bg-solid sm:backdrop-blur-md  pointer-events-auto flex w-full items-center justify-between gap-6 rounded-full px-4 py-1 transition-colors sm:px-6 sm:pr-4"
         >
+
           <a
             className="font-clash-display text-xl text-textPrimary font-medium sm:text-xl"
             href="/"
@@ -98,9 +99,8 @@ export const Navigation = () => {
                     />
                   )}
                   <a
-                    className={`text-textPrimary ${
-                      isActive ? "font-semibold" : ""
-                    }`}
+                    className={`text-textPrimary ${isActive ? "font-semibold" : ""
+                      }`}
                     href={item.href}
                   >
                     <span className="relative inline-flex overflow-hidden">
@@ -227,9 +227,8 @@ export const Navigation = () => {
             return (
               <li key={item.name} className="p-4">
                 <a
-                  className={`flex flex-col items-center justify-center gap-1 ${
-                    isActive ? "text-primary" : "text-textPrimary"
-                  }`}
+                  className={`flex flex-col items-center justify-center gap-1 ${isActive ? "text-primary" : "text-textPrimary"
+                    }`}
                   href={item.href}
                 >
                   {item.name === "Home" && (
