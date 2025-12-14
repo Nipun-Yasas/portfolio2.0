@@ -9,9 +9,11 @@ import { SplitText } from "../SplitText";
 import { HeroHighlight, Highlight } from "../HeroHighlight";
 import { Button } from "../Button";
 import { TextLoop } from "../TextLoop";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
   const [mounted, setMounted] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     setMounted(true);
@@ -182,7 +184,7 @@ export default function Hero() {
                   </svg>
                 </a>
               </div>
-              <Button>Know Me Better</Button>
+              <Button onClick={() => router.push('/about')}>Know Me Better</Button>
             </motion.div>
           </div>
         </div>
