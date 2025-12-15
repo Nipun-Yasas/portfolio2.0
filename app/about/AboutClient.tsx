@@ -49,7 +49,7 @@ export default function About() {
                 }}
                 className="text-4xl sm:text-5xl lg:text-6xl leading-snug lg:leading-tight text-center sm:text-left max-w-4xl"
               >
-                A Aspiring{" "}
+                An Aspiring{" "}
                 <Highlight className="text-textPrimary">
                   Software Engineer
                 </Highlight>
