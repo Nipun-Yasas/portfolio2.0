@@ -47,6 +47,10 @@ export default function Education() {
                     <span>L2S2 SGPA</span>
                     <span className="text-textPrimary">3.56</span>
                   </div>
+                  <div className="flex justify-between gap-4 text-textPrimary">
+                    <span>L3S1 SGPA</span>
+                    <span className="text-textPrimary">3.57</span>
+                  </div>
                 </div>
               }
             />

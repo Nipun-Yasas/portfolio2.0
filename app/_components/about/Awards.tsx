@@ -3,6 +3,20 @@ import AwardCard from "../AwardCard";
 
 const awardsData = [
   {
+    image: "/awards/Mobitel.jpg",
+    award: "Participant",
+    competition: "AI assistant coding challenge",
+    year: "2026",
+    type: "App development",
+  },
+  {
+    image: "/awards/FestX.jpg",
+    award: "2nd Runners-up",
+    competition: "FestX 2026",
+    year: "2026",
+    type: "Portfolio Development",
+  },
+  {
     image: "/awards/Devthon.jpg",
     award: "Finalists",
     competition: "Devthon 2.0",

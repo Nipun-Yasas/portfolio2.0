@@ -37,6 +37,14 @@ type ItemDef = {
 
 const DEFAULT_IMAGES: ImageItem[] = [
   {
+    src: "/gallery/cryptx1.jpg",
+    alt: "CryptX Final Event 1",
+  },
+  {
+    src: "/gallery/cryptx2.jpg",
+    alt: "CryptX Final Event 2",
+  },
+  {
     src: "/awards/InnovateX.jpg",
     alt: "Devthon Event 2",
   },

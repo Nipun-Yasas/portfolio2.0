@@ -36,9 +36,9 @@ import { Button } from "../_components/Button";
 const questions = [
   {
     value: "job",
-    title: "1. Are you open to freelance, part-time work, or internships ?",
+    title: "1. Are you open to freelance, part-time work ?",
     content:
-      "Yes, but currently I’m focused on securing a Software Engineering internship. I am looking for a 6-month internship that begins in January 2026. Also, I'm open to freelance and part-time opportunities that align with software engineering, web development, or AI/ML-focused roles.",
+      "Yes, I'm open to freelance and part-time opportunities that align with software engineering, web development, or AI/ML-focused roles.",
   },
   {
     value: "specialization",

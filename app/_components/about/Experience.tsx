@@ -3,10 +3,16 @@ import ExperienceCard from "../ExperienceCard";
 
 const experienceData = [
   {
+    logo: "/experience/Mobitel.png",
+    position: "Software Engineer Intern",
+    company: "SLT Mobitel (Pvt) Ltd",
+    duration: "2026 Jan - ",
+  },
+  {
     logo: "/experience/Susipvan.png",
     position: "Combined Maths Paper Instructor",
     company: "Susipvan Higher Education (Private) Limited",
-    duration: "2022 - 2024",
+    duration: "2022 Sep - 2023 Apr",
   },
 ];
 
